@@ -11,7 +11,7 @@ class BasicMovieViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    var isLoadingList : Bool = false
+
     var currentPage : Int = 1
     var viewModel: BasicMovieViewModel? {
         didSet {
@@ -29,8 +29,9 @@ class BasicMovieViewController: UIViewController {
     func configureUI() {
         tableView.register(MovieCell().nib(), forCellReuseIdentifier: MovieCell.identifier)
 //        Rowheight dynamic
+        
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 200
+        tableView.estimatedRowHeight = 400
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -45,7 +46,6 @@ class BasicMovieViewController: UIViewController {
             case .loading:
                 print("start activity indicator")
             case .fetched:
-                self.isLoadingList = false
                 self.currentPage += 1
                 self.tableView.reloadData()
             case .erroOccured(let error):
@@ -55,7 +55,7 @@ class BasicMovieViewController: UIViewController {
     }
     
     
-    func rootToDetail(show movie :MoviesPresentation) {
+    func routeToDetail(show movie :MoviesPresentation) {
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BasicMovieDetailViewController") as! BasicMovieDetailViewController
         
         vc.movie = movie
@@ -80,23 +80,21 @@ extension BasicMovieViewController: UITableViewDataSource {
 
 extension BasicMovieViewController: UITableViewDelegate {
     
-//    Fetch pagination related to move.count -> willdisplaycell
-//    isLoadingList should be at ViewModel
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (((scrollView.contentOffset.y + scrollView.frame.size.height) > scrollView.contentSize.height * 2/3 ) && !isLoadingList) {
-            self.isLoadingList = true
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let viewmodel = viewModel else {return}
+        if !(indexPath.row + 1 < viewmodel.state.moviePresentations.count) {
             self.viewModel?.fetchPopular(with: self.currentPage)
         }
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        routeToDetail
         guard let moveList = viewModel?.state.moviePresentations else {return}
-        rootToDetail(show: (moveList[indexPath.row]))
+        routeToDetail(show: (moveList[indexPath.row]))
     }
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 300
+//        // Swift 4.2 onwards
+//        return UITableView.automaticDimension
 //    }
 }
 
