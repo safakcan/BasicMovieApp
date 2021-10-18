@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C13AAB329496C85ABD283BDA848E4F6 /* HeaderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F26E1AD6AAE61FF22D3D283F64E6BE /* HeaderBuilder.swift */; };
+		18810ECA0492A5A0421D46DEA4317CF3 /* Device.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221183EB757DF291E527DBB77C1197DA /* Device.generated.swift */; };
+		1B3075E50A3DDDE7936CA78847732B17 /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F932ECD9C163050C54AE7BA1BBD448D /* URLRequest+cURL.swift */; };
+		261BEA5E66A7B0B7A26421CE7C40264E /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03E3600181B8D398134056447337D5 /* NetworkingError.swift */; };
+		28363AF1D8381D09532BB53DA3128A08 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9406E795B4A7326252DE309F0FF4CDF2 /* URLRequestConvertible.swift */; };
+		2BCD994761156400384C8E2487D77753 /* VoltranRegisterSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9970A8049062065B0A551780955845 /* VoltranRegisterSource.swift */; };
+		2CD41D71ACF88878832023FEFDAC6706 /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654EDDEBE0BF3ABA4DAF3CD517A8DA03 /* Uploader.swift */; };
+		3441ADD2B4DD190A06D3BA3E762BECAC /* VoltranRegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771629BD25B0FA2B46CF0862D9D30B5F /* VoltranRegisterRequest.swift */; };
+		3592125F907E919161976BDD90C11DC8 /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A7F2C85C737B10427018DCDE38035 /* URLEncoder.swift */; };
+		36DAF884BC3F7BBD3F73961DE4D4DBB7 /* DataFormatter+ISO8631.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BC83009B786EEA2CD3F4CD5592607D /* DataFormatter+ISO8631.swift */; };
+		375A4497E759E9CAE00F1ECA998995BB /* MADNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A22467645B18DD60CF3AD01BD7C83F9 /* MADNetwork-dummy.m */; };
+		39FD3A3A7459147D2B8BFA3EBB26BF1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		42324BCA127A01AF62EBADD3AFB30595 /* FORMEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59949705E302D318E6624A499D3CC0 /* FORMEncoder.swift */; };
+		43ED60CE913AB71CFAC1BE6C00BE3713 /* MADNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8EBA237EA8F5C0D6F786BCE165A9935 /* MADNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		474B45601FBD571B1E2A5FE5CDCF14D5 /* NetworkManager+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7E92D99BC601C00489077398839E5E /* NetworkManager+Combine.swift */; };
+		4AFF0E7C295867289B20F2B1E631DF56 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48D93DEDD5685D97EF595AFA5DD0A1 /* ParameterEncoding.swift */; };
+		4C54DCFA7BC31B442CADFDEB6E1BF756 /* Pods-BasicMovieApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E23FE68606E4B7E25076644A6C6D3E /* Pods-BasicMovieApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54B66462C2BFA9D9CD8C4760D8485DA3 /* MADDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10159195C8F458A9CC019CB9602A45DA /* MADDeviceInfo.swift */; };
+		579DFF8F4E51ABA9C98A94628BE1DC08 /* Data+PrettyPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623043A3219C3D19BC18A77A16053B4 /* Data+PrettyPrint.swift */; };
+		5D31B2AE4BFBE963FAB927ABFBDA0BFA /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351103C06C4BC07B881EC088C1F756AB /* BaseURL.swift */; };
+		67EB908846D197FEC2C9E98601314F96 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A62AEDD92214014474C5A2B629B6C1C /* Environment.swift */; };
+		7D673E3AFB183A2F876F44810E401176 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479193A149C9AC0EE6BCDC2F3439F6AA /* HTTPMethod.swift */; };
+		828A4F6CBA970A003C31556DF3D78837 /* VoltranBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B73AE197694565ED05E9D417C74701 /* VoltranBaseResponse.swift */; };
+		88D965A3E59E1BFAB2FBF1E8318A39C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		93D56267A36B1164C34BAD1E422D1100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		97FE84C8A525653B196FBE25C9C1DCDE /* MADDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B3FB78245FC0C62D05BF4218C96F4 /* MADDeviceManager.swift */; };
+		A80F7397ABEBE97A39206436FABFD612 /* VoltranFCMTokenUpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F3A34DD4B39D6E8AD3A3DB20BF4735 /* VoltranFCMTokenUpdateRequest.swift */; };
+		B117419690F84487AB01A5392DFDEBFD /* Pods-BasicMovieApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF79E17FE039A47335C9B43C09C946 /* Pods-BasicMovieApp-dummy.m */; };
+		BE55AA3AD2F3F76234732D1FBB3339B0 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7385743CF4323EB9E8DA71D5D4B23FA4 /* JSONEncoder.swift */; };
+		C2907FFC55A474B6DA9D450F0997E4DB /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B210396E3E6285429C229683F3B4E7 /* HTTPError.swift */; };
+		C85F90DF8E7F04CE8DB88830714F65B6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F93A79114671FFEC38B0CE05BA5C99 /* API.swift */; };
+		C87B4884FEE02BC08B6CC6598CF66971 /* VoltranReceiptValidationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BD9787FFC473534D3B05D647748CF /* VoltranReceiptValidationRequest.swift */; };
+		CBFFAD0AB46E7DE60D2E695DF97E14DA /* VoltranAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87843295B582BAB50943CE68C89D3DDF /* VoltranAPIEndpoint.swift */; };
+		CDA88CBFD7D1FF62C788CA1EEC110E84 /* VoltranRegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D768B694175489D66F8B2E13302FF3 /* VoltranRegisterResponse.swift */; };
+		E07F81AB3E594ECC09AE229205348DB3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BE67C12A9A195D3B85DACDC52C9F /* NetworkManager.swift */; };
+		E46E861796E5C30BE3F863507322A952 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77CF438F029212745CDE99DD6C2A46 /* Response.swift */; };
+		F2EEAF8A702D1E4A8F469725BE8CF10E /* MADSubscriptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01397E4F2CC7AB4299B4E7CD2A4ECB68 /* MADSubscriptionStatus.swift */; };
+		F4EEC369AC2750F7613D2873257252AC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDB8AF0E58C47C49A69FE76531EC5EA /* Endpoint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7788A7A7B5A7CDB2B1756AA7AF86AE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFDF4FCF98C81EA78F95D473FE850B25;
+			remoteInfo = MADNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01397E4F2CC7AB4299B4E7CD2A4ECB68 /* MADSubscriptionStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MADSubscriptionStatus.swift; path = Sources/Models/MADSubscriptionStatus.swift; sourceTree = "<group>"; };
+		03F93A79114671FFEC38B0CE05BA5C99 /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = API.swift; path = Sources/NetworkService/API.swift; sourceTree = "<group>"; };
+		04B210396E3E6285429C229683F3B4E7 /* HTTPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPError.swift; path = Sources/NetworkService/HTTPError.swift; sourceTree = "<group>"; };
+		07D78FEA98417DEE12D75BC802B3324B /* Pods-BasicMovieApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicMovieApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D9970A8049062065B0A551780955845 /* VoltranRegisterSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoltranRegisterSource.swift; path = Sources/Models/VoltranRegisterSource.swift; sourceTree = "<group>"; };
+		0F4BD9787FFC473534D3B05D647748CF /* VoltranReceiptValidationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoltranReceiptValidationRequest.swift; path = Sources/NetworkModels/VoltranReceiptValidationRequest.swift; sourceTree = "<group>"; };
+		10159195C8F458A9CC019CB9602A45DA /* MADDeviceInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MADDeviceInfo.swift; path = Sources/Models/MADDeviceInfo.swift; sourceTree = "<group>"; };
+		12D82F10B6FFE0490E4019FDD1EC9697 /* Pods-BasicMovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicMovieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		221183EB757DF291E527DBB77C1197DA /* Device.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.generated.swift; path = Sources/Device.generated.swift; sourceTree = "<group>"; };
+		2489211E9CDBE54A5DDB5FBAF799F10C /* Pods-BasicMovieApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicMovieApp-frameworks.sh"; sourceTree = "<group>"; };
+		2A62AEDD92214014474C5A2B629B6C1C /* Environment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = Sources/NetworkService/Environment.swift; sourceTree = "<group>"; };
+		2B9B3FB78245FC0C62D05BF4218C96F4 /* MADDeviceManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MADDeviceManager.swift; path = Sources/MADDeviceManager.swift; sourceTree = "<group>"; };
+		2D4BB69783BBCB6021EE7324CF2ACED5 /* MADNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MADNetwork-Info.plist"; sourceTree = "<group>"; };
+		2FAF79E17FE039A47335C9B43C09C946 /* Pods-BasicMovieApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicMovieApp-dummy.m"; sourceTree = "<group>"; };
+		320DBE26D08CF4DAFE15C3B41BF93123 /* MADNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MADNetwork-prefix.pch"; sourceTree = "<group>"; };
+		351103C06C4BC07B881EC088C1F756AB /* BaseURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseURL.swift; path = Sources/NetworkService/BaseURL.swift; sourceTree = "<group>"; };
+		35F26E1AD6AAE61FF22D3D283F64E6BE /* HeaderBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderBuilder.swift; path = Sources/NetworkService/HeaderBuilder.swift; sourceTree = "<group>"; };
+		36B73AE197694565ED05E9D417C74701 /* VoltranBaseResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoltranBaseResponse.swift; path = Sources/Models/VoltranBaseResponse.swift; sourceTree = "<group>"; };
+		479193A149C9AC0EE6BCDC2F3439F6AA /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/NetworkService/HTTPMethod.swift; sourceTree = "<group>"; };
+		4B066107372989124628CC2C33739F3F /* Pods-BasicMovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicMovieApp.release.xcconfig"; sourceTree = "<group>"; };
+		56D768B694175489D66F8B2E13302FF3 /* VoltranRegisterResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoltranRegisterResponse.swift; path = Sources/Models/VoltranRegisterResponse.swift; sourceTree = "<group>"; };
+		594A715984F236008BB427685C1A517B /* MADNetwork */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MADNetwork; path = MADNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDB8AF0E58C47C49A69FE76531EC5EA /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Sources/NetworkService/Endpoint.swift; sourceTree = "<group>"; };
+		654EDDEBE0BF3ABA4DAF3CD517A8DA03 /* Uploader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Uploader.swift; path = Sources/NetworkService/Uploader.swift; sourceTree = "<group>"; };
+		6623043A3219C3D19BC18A77A16053B4 /* Data+PrettyPrint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+PrettyPrint.swift"; path = "Sources/Extensions/Data+PrettyPrint.swift"; sourceTree = "<group>"; };
+		6B77CF438F029212745CDE99DD6C2A46 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/NetworkService/Response.swift; sourceTree = "<group>"; };
+		6D03E3600181B8D398134056447337D5 /* NetworkingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkingError.swift; path = Sources/NetworkService/NetworkingError.swift; sourceTree = "<group>"; };
+		729CF5EB9C7F7012F0885A740D9FF807 /* MADNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MADNetwork.modulemap; sourceTree = "<group>"; };
+		7385743CF4323EB9E8DA71D5D4B23FA4 /* JSONEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncoder.swift; path = Sources/NetworkService/Encoding/JSONEncoder.swift; sourceTree = "<group>"; };
+		771629BD25B0FA2B46CF0862D9D30B5F /* VoltranRegisterRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoltranRegisterRequest.swift; path = Sources/NetworkModels/VoltranRegisterRequest.swift; sourceTree = "<group>"; };
+		87843295B582BAB50943CE68C89D3DDF /* VoltranAPIEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoltranAPIEndpoint.swift; path = Sources/NetworkModels/VoltranAPIEndpoint.swift; sourceTree = "<group>"; };
+		8A22467645B18DD60CF3AD01BD7C83F9 /* MADNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MADNetwork-dummy.m"; sourceTree = "<group>"; };
+		8E9A278446BB6865F39BD5D08DAA72D2 /* Pods-BasicMovieApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicMovieApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		9406E795B4A7326252DE309F0FF4CDF2 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequestConvertible.swift; path = Sources/NetworkService/URLRequestConvertible.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F932ECD9C163050C54AE7BA1BBD448D /* URLRequest+cURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+cURL.swift"; path = "Sources/Extensions/URLRequest+cURL.swift"; sourceTree = "<group>"; };
+		A59AF486ADD0B39804F0DC5FFD760FED /* Pods-BasicMovieApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicMovieApp-Info.plist"; sourceTree = "<group>"; };
+		A889F0BE657CB0F5DE0B1B574560AB64 /* MADNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MADNetwork.debug.xcconfig; sourceTree = "<group>"; };
+		A9750AEFEE9823466CDF733F893488DB /* MADNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MADNetwork.release.xcconfig; sourceTree = "<group>"; };
+		AE48D93DEDD5685D97EF595AFA5DD0A1 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Sources/NetworkService/Encoding/ParameterEncoding.swift; sourceTree = "<group>"; };
+		B9D8BE67C12A9A195D3B85DACDC52C9F /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Sources/NetworkManager.swift; sourceTree = "<group>"; };
+		BE7E92D99BC601C00489077398839E5E /* NetworkManager+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NetworkManager+Combine.swift"; path = "Sources/NetworkManager+Combine.swift"; sourceTree = "<group>"; };
+		C6E23FE68606E4B7E25076644A6C6D3E /* Pods-BasicMovieApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BasicMovieApp-umbrella.h"; sourceTree = "<group>"; };
+		C7130EA6503D85EAAF790643CAB18B52 /* Pods-BasicMovieApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BasicMovieApp"; path = Pods_BasicMovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EBA237EA8F5C0D6F786BCE165A9935 /* MADNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MADNetwork-umbrella.h"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D736A8BE6636567C9331E2AFFC4CD499 /* Pods-BasicMovieApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BasicMovieApp.modulemap"; sourceTree = "<group>"; };
+		D8F3A34DD4B39D6E8AD3A3DB20BF4735 /* VoltranFCMTokenUpdateRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoltranFCMTokenUpdateRequest.swift; path = Sources/NetworkModels/VoltranFCMTokenUpdateRequest.swift; sourceTree = "<group>"; };
+		DA2A7F2C85C737B10427018DCDE38035 /* URLEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncoder.swift; path = Sources/NetworkService/Encoding/URLEncoder.swift; sourceTree = "<group>"; };
+		E0BC83009B786EEA2CD3F4CD5592607D /* DataFormatter+ISO8631.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataFormatter+ISO8631.swift"; path = "Sources/Extensions/DataFormatter+ISO8631.swift"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FC59949705E302D318E6624A499D3CC0 /* FORMEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FORMEncoder.swift; path = Sources/NetworkService/Encoding/FORMEncoder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3CE624ED29CFE57E9693C453EC035F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D965A3E59E1BFAB2FBF1E8318A39C2 /* Foundation.framework in Frameworks */,
+				93D56267A36B1164C34BAD1E422D1100 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07AAAA916E56950D5C986B47FBEC46C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39FD3A3A7459147D2B8BFA3EBB26BF1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C8651A498BF9179B6F5100A6EAC0FCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9834B771DC6D4E974DF332FDF626D5CA /* MADNetwork */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		10F1D2E5851A93AD82D7F1CD0351F8E5 /* Pods-BasicMovieApp */ = {
+			isa = PBXGroup;
+			children = (
+				D736A8BE6636567C9331E2AFFC4CD499 /* Pods-BasicMovieApp.modulemap */,
+				07D78FEA98417DEE12D75BC802B3324B /* Pods-BasicMovieApp-acknowledgements.markdown */,
+				8E9A278446BB6865F39BD5D08DAA72D2 /* Pods-BasicMovieApp-acknowledgements.plist */,
+				2FAF79E17FE039A47335C9B43C09C946 /* Pods-BasicMovieApp-dummy.m */,
+				2489211E9CDBE54A5DDB5FBAF799F10C /* Pods-BasicMovieApp-frameworks.sh */,
+				A59AF486ADD0B39804F0DC5FFD760FED /* Pods-BasicMovieApp-Info.plist */,
+				C6E23FE68606E4B7E25076644A6C6D3E /* Pods-BasicMovieApp-umbrella.h */,
+				12D82F10B6FFE0490E4019FDD1EC9697 /* Pods-BasicMovieApp.debug.xcconfig */,
+				4B066107372989124628CC2C33739F3F /* Pods-BasicMovieApp.release.xcconfig */,
+			);
+			name = "Pods-BasicMovieApp";
+			path = "Target Support Files/Pods-BasicMovieApp";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8FA6453FA9C54673EF7369A7C31EFCA5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10F1D2E5851A93AD82D7F1CD0351F8E5 /* Pods-BasicMovieApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9834B771DC6D4E974DF332FDF626D5CA /* MADNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				03F93A79114671FFEC38B0CE05BA5C99 /* API.swift */,
+				351103C06C4BC07B881EC088C1F756AB /* BaseURL.swift */,
+				6623043A3219C3D19BC18A77A16053B4 /* Data+PrettyPrint.swift */,
+				E0BC83009B786EEA2CD3F4CD5592607D /* DataFormatter+ISO8631.swift */,
+				221183EB757DF291E527DBB77C1197DA /* Device.generated.swift */,
+				5EDB8AF0E58C47C49A69FE76531EC5EA /* Endpoint.swift */,
+				2A62AEDD92214014474C5A2B629B6C1C /* Environment.swift */,
+				FC59949705E302D318E6624A499D3CC0 /* FORMEncoder.swift */,
+				35F26E1AD6AAE61FF22D3D283F64E6BE /* HeaderBuilder.swift */,
+				04B210396E3E6285429C229683F3B4E7 /* HTTPError.swift */,
+				479193A149C9AC0EE6BCDC2F3439F6AA /* HTTPMethod.swift */,
+				7385743CF4323EB9E8DA71D5D4B23FA4 /* JSONEncoder.swift */,
+				10159195C8F458A9CC019CB9602A45DA /* MADDeviceInfo.swift */,
+				2B9B3FB78245FC0C62D05BF4218C96F4 /* MADDeviceManager.swift */,
+				01397E4F2CC7AB4299B4E7CD2A4ECB68 /* MADSubscriptionStatus.swift */,
+				6D03E3600181B8D398134056447337D5 /* NetworkingError.swift */,
+				B9D8BE67C12A9A195D3B85DACDC52C9F /* NetworkManager.swift */,
+				BE7E92D99BC601C00489077398839E5E /* NetworkManager+Combine.swift */,
+				AE48D93DEDD5685D97EF595AFA5DD0A1 /* ParameterEncoding.swift */,
+				6B77CF438F029212745CDE99DD6C2A46 /* Response.swift */,
+				654EDDEBE0BF3ABA4DAF3CD517A8DA03 /* Uploader.swift */,
+				DA2A7F2C85C737B10427018DCDE38035 /* URLEncoder.swift */,
+				9F932ECD9C163050C54AE7BA1BBD448D /* URLRequest+cURL.swift */,
+				9406E795B4A7326252DE309F0FF4CDF2 /* URLRequestConvertible.swift */,
+				87843295B582BAB50943CE68C89D3DDF /* VoltranAPIEndpoint.swift */,
+				36B73AE197694565ED05E9D417C74701 /* VoltranBaseResponse.swift */,
+				D8F3A34DD4B39D6E8AD3A3DB20BF4735 /* VoltranFCMTokenUpdateRequest.swift */,
+				0F4BD9787FFC473534D3B05D647748CF /* VoltranReceiptValidationRequest.swift */,
+				771629BD25B0FA2B46CF0862D9D30B5F /* VoltranRegisterRequest.swift */,
+				56D768B694175489D66F8B2E13302FF3 /* VoltranRegisterResponse.swift */,
+				0D9970A8049062065B0A551780955845 /* VoltranRegisterSource.swift */,
+				DFA715C8A93793C334801A4391445EE2 /* Support Files */,
+			);
+			name = MADNetwork;
+			path = MADNetwork;
+			sourceTree = "<group>";
+		};
+		A51E81C3534D94877A157B4A7771C031 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				594A715984F236008BB427685C1A517B /* MADNetwork */,
+				C7130EA6503D85EAAF790643CAB18B52 /* Pods-BasicMovieApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				0C8651A498BF9179B6F5100A6EAC0FCD /* Pods */,
+				A51E81C3534D94877A157B4A7771C031 /* Products */,
+				8FA6453FA9C54673EF7369A7C31EFCA5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DFA715C8A93793C334801A4391445EE2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				729CF5EB9C7F7012F0885A740D9FF807 /* MADNetwork.modulemap */,
+				8A22467645B18DD60CF3AD01BD7C83F9 /* MADNetwork-dummy.m */,
+				2D4BB69783BBCB6021EE7324CF2ACED5 /* MADNetwork-Info.plist */,
+				320DBE26D08CF4DAFE15C3B41BF93123 /* MADNetwork-prefix.pch */,
+				C8EBA237EA8F5C0D6F786BCE165A9935 /* MADNetwork-umbrella.h */,
+				A889F0BE657CB0F5DE0B1B574560AB64 /* MADNetwork.debug.xcconfig */,
+				A9750AEFEE9823466CDF733F893488DB /* MADNetwork.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MADNetwork";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8238F3C250C536E07B49D9E77EA1CE44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ED60CE913AB71CFAC1BE6C00BE3713 /* MADNetwork-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		977C4777A9E4E3B677B2A1B1A6344E13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C54DCFA7BC31B442CADFDEB6E1BF756 /* Pods-BasicMovieApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CFDF4FCF98C81EA78F95D473FE850B25 /* MADNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57B033243A20205E104BCD1551D4CBBF /* Build configuration list for PBXNativeTarget "MADNetwork" */;
+			buildPhases = (
+				8238F3C250C536E07B49D9E77EA1CE44 /* Headers */,
+				E4F58EC4A9C55B71A2026B2985AA5503 /* Sources */,
+				D3CE624ED29CFE57E9693C453EC035F0 /* Frameworks */,
+				F8BFE069990B114DE4D0A876DF124F71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MADNetwork;
+			productName = MADNetwork;
+			productReference = 594A715984F236008BB427685C1A517B /* MADNetwork */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA8B5AEE6E7E4FE1BBC866F69F491AC7 /* Pods-BasicMovieApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86F3761FA778380E8C608047996E48A0 /* Build configuration list for PBXNativeTarget "Pods-BasicMovieApp" */;
+			buildPhases = (
+				977C4777A9E4E3B677B2A1B1A6344E13 /* Headers */,
+				6540E396204169186B7404B96B9A5029 /* Sources */,
+				F07AAAA916E56950D5C986B47FBEC46C /* Frameworks */,
+				93CA8F4567B2B38AA090C68778CC9A32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6D8F0C823346B790CB806B6F2FF738 /* PBXTargetDependency */,
+			);
+			name = "Pods-BasicMovieApp";
+			productName = Pods_BasicMovieApp;
+			productReference = C7130EA6503D85EAAF790643CAB18B52 /* Pods-BasicMovieApp */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A51E81C3534D94877A157B4A7771C031 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFDF4FCF98C81EA78F95D473FE850B25 /* MADNetwork */,
+				FA8B5AEE6E7E4FE1BBC866F69F491AC7 /* Pods-BasicMovieApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93CA8F4567B2B38AA090C68778CC9A32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BFE069990B114DE4D0A876DF124F71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6540E396204169186B7404B96B9A5029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B117419690F84487AB01A5392DFDEBFD /* Pods-BasicMovieApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F58EC4A9C55B71A2026B2985AA5503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85F90DF8E7F04CE8DB88830714F65B6 /* API.swift in Sources */,
+				5D31B2AE4BFBE963FAB927ABFBDA0BFA /* BaseURL.swift in Sources */,
+				579DFF8F4E51ABA9C98A94628BE1DC08 /* Data+PrettyPrint.swift in Sources */,
+				36DAF884BC3F7BBD3F73961DE4D4DBB7 /* DataFormatter+ISO8631.swift in Sources */,
+				18810ECA0492A5A0421D46DEA4317CF3 /* Device.generated.swift in Sources */,
+				F4EEC369AC2750F7613D2873257252AC /* Endpoint.swift in Sources */,
+				67EB908846D197FEC2C9E98601314F96 /* Environment.swift in Sources */,
+				42324BCA127A01AF62EBADD3AFB30595 /* FORMEncoder.swift in Sources */,
+				0C13AAB329496C85ABD283BDA848E4F6 /* HeaderBuilder.swift in Sources */,
+				C2907FFC55A474B6DA9D450F0997E4DB /* HTTPError.swift in Sources */,
+				7D673E3AFB183A2F876F44810E401176 /* HTTPMethod.swift in Sources */,
+				BE55AA3AD2F3F76234732D1FBB3339B0 /* JSONEncoder.swift in Sources */,
+				54B66462C2BFA9D9CD8C4760D8485DA3 /* MADDeviceInfo.swift in Sources */,
+				97FE84C8A525653B196FBE25C9C1DCDE /* MADDeviceManager.swift in Sources */,
+				375A4497E759E9CAE00F1ECA998995BB /* MADNetwork-dummy.m in Sources */,
+				F2EEAF8A702D1E4A8F469725BE8CF10E /* MADSubscriptionStatus.swift in Sources */,
+				261BEA5E66A7B0B7A26421CE7C40264E /* NetworkingError.swift in Sources */,
+				E07F81AB3E594ECC09AE229205348DB3 /* NetworkManager.swift in Sources */,
+				474B45601FBD571B1E2A5FE5CDCF14D5 /* NetworkManager+Combine.swift in Sources */,
+				4AFF0E7C295867289B20F2B1E631DF56 /* ParameterEncoding.swift in Sources */,
+				E46E861796E5C30BE3F863507322A952 /* Response.swift in Sources */,
+				2CD41D71ACF88878832023FEFDAC6706 /* Uploader.swift in Sources */,
+				3592125F907E919161976BDD90C11DC8 /* URLEncoder.swift in Sources */,
+				1B3075E50A3DDDE7936CA78847732B17 /* URLRequest+cURL.swift in Sources */,
+				28363AF1D8381D09532BB53DA3128A08 /* URLRequestConvertible.swift in Sources */,
+				CBFFAD0AB46E7DE60D2E695DF97E14DA /* VoltranAPIEndpoint.swift in Sources */,
+				828A4F6CBA970A003C31556DF3D78837 /* VoltranBaseResponse.swift in Sources */,
+				A80F7397ABEBE97A39206436FABFD612 /* VoltranFCMTokenUpdateRequest.swift in Sources */,
+				C87B4884FEE02BC08B6CC6598CF66971 /* VoltranReceiptValidationRequest.swift in Sources */,
+				3441ADD2B4DD190A06D3BA3E762BECAC /* VoltranRegisterRequest.swift in Sources */,
+				CDA88CBFD7D1FF62C788CA1EEC110E84 /* VoltranRegisterResponse.swift in Sources */,
+				2BCD994761156400384C8E2487D77753 /* VoltranRegisterSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B6D8F0C823346B790CB806B6F2FF738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MADNetwork;
+			target = CFDF4FCF98C81EA78F95D473FE850B25 /* MADNetwork */;
+			targetProxy = 7788A7A7B5A7CDB2B1756AA7AF86AE29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27AB0F59C90F34338B4E7A5C1297F72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B066107372989124628CC2C33739F3F /* Pods-BasicMovieApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BasicMovieApp/Pods-BasicMovieApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BasicMovieApp/Pods-BasicMovieApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		376B49767A2FD25C52281F665AAF892D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9750AEFEE9823466CDF733F893488DB /* MADNetwork.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MADNetwork/MADNetwork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MADNetwork/MADNetwork-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MADNetwork/MADNetwork.modulemap";
+				PRODUCT_MODULE_NAME = MADNetwork;
+				PRODUCT_NAME = MADNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52ADC799CF3925E6C651A73098E66EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D82F10B6FFE0490E4019FDD1EC9697 /* Pods-BasicMovieApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BasicMovieApp/Pods-BasicMovieApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BasicMovieApp/Pods-BasicMovieApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E143902947AC5B01086055270CF5C33B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A889F0BE657CB0F5DE0B1B574560AB64 /* MADNetwork.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MADNetwork/MADNetwork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MADNetwork/MADNetwork-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MADNetwork/MADNetwork.modulemap";
+				PRODUCT_MODULE_NAME = MADNetwork;
+				PRODUCT_NAME = MADNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57B033243A20205E104BCD1551D4CBBF /* Build configuration list for PBXNativeTarget "MADNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E143902947AC5B01086055270CF5C33B /* Debug */,
+				376B49767A2FD25C52281F665AAF892D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86F3761FA778380E8C608047996E48A0 /* Build configuration list for PBXNativeTarget "Pods-BasicMovieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ADC799CF3925E6C651A73098E66EF7 /* Debug */,
+				27AB0F59C90F34338B4E7A5C1297F72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

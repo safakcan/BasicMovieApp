@@ -1,0 +1,30 @@
+{
+  "name": "MADNetwork",
+  "version": "0.1.9",
+  "summary": "The network manager of Madduck iOS Apps",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/teammadduck/MADNetwork",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "arslanbilal": "bilal.arslan1993@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/teammadduck/MADNetwork.git",
+    "tag": "0.1.9"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "10.0",
+    "osx": "10.14",
+    "tvos": "10.0",
+    "watchos": "5.0"
+  },
+  "source_files": "Sources/**/*",
+  "ios": {
+    "frameworks": "UIKit"
+  },
+  "swift_version": "5.0"
+}
