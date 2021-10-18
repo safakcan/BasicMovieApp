@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class BasicMovieDetailViewController: UIViewController {
+class MovieDetailViewController: UIViewController {
     
     @IBOutlet var posterImage: UIImageView!
     @IBOutlet var titleLabel: UILabel!
@@ -18,7 +18,7 @@ class BasicMovieDetailViewController: UIViewController {
     @IBOutlet var imageViewContainer : UIView!
     
     var movie : MoviesPresentation?
-    var posterPath = "https://themoviedb.org/t/p/original"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class BasicMovieDetailViewController: UIViewController {
     
     func configrue() {
         guard  let poster = movie?.posterPath else {return}
-        let url = URL(string: posterPath + poster)
+        let url = URL(string: NetworkUtils.posterPath + poster)
         posterImage.kf.setImage(with: url)
         
         imageViewContainer.layer.cornerRadius = 5

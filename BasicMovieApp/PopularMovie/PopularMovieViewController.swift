@@ -7,36 +7,32 @@
 
 import UIKit
 
-class BasicMovieViewController: UIViewController {
+class PopularMovieViewController: UIViewController {
     
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
 
     var currentPage : Int = 1
-    var viewModel: BasicMovieViewModel? {
+    var viewModel: PopularMovieViewModel? {
         didSet {
             configureViewModel()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        self.viewModel = BasicMovieViewModel(state: BasicMovieState())
+        self.viewModel = PopularMovieViewModel(state: PopularMovieState())
         viewModel?.fetchPopular(with: self.currentPage)
         
     }
     
     func configureUI() {
         tableView.register(MovieCell().nib(), forCellReuseIdentifier: MovieCell.identifier)
-//        Rowheight dynamic
-        
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 400
         
         tableView.delegate = self
         tableView.dataSource = self
-        searchBar.delegate = self
-        self.searchBar.showsCancelButton = true
     }
     
     private func configureViewModel() {
@@ -56,14 +52,14 @@ class BasicMovieViewController: UIViewController {
     
     
     func routeToDetail(show movie :MoviesPresentation) {
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BasicMovieDetailViewController") as! BasicMovieDetailViewController
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BasicMovieDetailViewController") as! MovieDetailViewController
         
         vc.movie = movie
         show(vc, sender: nil)
     }
 }
 
-extension BasicMovieViewController: UITableViewDataSource {
+extension PopularMovieViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel?.state.moviePresentations.count ?? 0
     }
@@ -78,7 +74,7 @@ extension BasicMovieViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 
-extension BasicMovieViewController: UITableViewDelegate {
+extension PopularMovieViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let viewmodel = viewModel else {return}
@@ -90,24 +86,5 @@ extension BasicMovieViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let moveList = viewModel?.state.moviePresentations else {return}
         routeToDetail(show: (moveList[indexPath.row]))
-    }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        // Swift 4.2 onwards
-//        return UITableView.automaticDimension
-//    }
-}
-
-extension BasicMovieViewController: UISearchBarDelegate {
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        viewModel?.fetchSearch(with: searchBar.text ?? "")
-        searchBar.resignFirstResponder()
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.text = nil
-        viewModel?.reinstallMoviePresentation()
-        searchBar.resignFirstResponder()
     }
 }
