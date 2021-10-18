@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieCell: UITableViewCell {
     @IBOutlet weak var movieImageView: UIImageView!
@@ -32,8 +33,8 @@ class MovieCell: UITableViewCell {
         movieName.text = model.title
         movieDesc.text = model.overview
         guard  let poster = model.posterPath else {return}
-        guard let data = try? Data(contentsOf: URL(string: (posterPath + poster))!) else {return}
-        movieImageView.image = UIImage(data: data)
+        let url = URL(string: posterPath + poster)
+        movieImageView.kf.setImage(with: url)
     }
     
     func nib() -> UINib {

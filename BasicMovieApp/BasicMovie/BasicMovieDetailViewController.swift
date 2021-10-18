@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BasicMovieDetailViewController: UIViewController {
     
@@ -26,10 +27,10 @@ class BasicMovieDetailViewController: UIViewController {
     
     func configrue() {
         guard  let poster = movie?.posterPath else {return}
-        guard let data = try? Data(contentsOf: URL(string: (posterPath + poster))!) else {return}
+        let url = URL(string: posterPath + poster)
+        posterImage.kf.setImage(with: url)
         
         imageViewContainer.layer.cornerRadius = 5
-        posterImage.image = UIImage(data: data)
         
         titleLabel.text = movie?.title
         descLabel.text = movie?.overview

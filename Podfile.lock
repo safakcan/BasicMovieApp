@@ -1,8 +1,14 @@
 PODS:
+  - Kingfisher (7.1.0)
   - MADNetwork (0.1.9)
 
 DEPENDENCIES:
+  - Kingfisher (~> 7.0)
   - MADNetwork (from `https://github.com/teammadduck/MADNetwork`)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
 
 EXTERNAL SOURCES:
   MADNetwork:
@@ -14,8 +20,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/teammadduck/MADNetwork
 
 SPEC CHECKSUMS:
+  Kingfisher: cdabaf49be7ee7cc124f0f276b355edf61903cf8
   MADNetwork: ef3edda0225644058fbac60484f0ae5c34f27085
 
-PODFILE CHECKSUM: 1001950ec2036b0779c2b4af969c1764bc8791d8
+PODFILE CHECKSUM: 8560f13e924be9a6a540714951c95ca79ddcccc1
 
 COCOAPODS: 1.11.2
