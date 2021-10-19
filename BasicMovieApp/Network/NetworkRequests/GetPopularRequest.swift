@@ -18,7 +18,7 @@ struct PopularMovieRequest: TradeAPIEndpoint {
     
     init(page: Int) {
         self.parameters = [
-            "api_key":"4f9da36791283d432b3658ba4274469e",
+            "api_key": NetworkUtils.apiKey,
             "page": page
         ]
     }

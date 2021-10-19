@@ -18,7 +18,7 @@ struct SearchMovieRequest: TradeAPIEndpoint {
     
     init(query: String) {
         self.parameters = [
-            "api_key":"4f9da36791283d432b3658ba4274469e",
+            "api_key": NetworkUtils.apiKey,
             "query": query
         ]
     }

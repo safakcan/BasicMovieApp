@@ -14,7 +14,7 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var movieDesc: UILabel!
     @IBOutlet weak var containerView: UIView!
     static var identifier = "MovieCell"
-    var posterPath = "https://themoviedb.org/t/p/original"
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,12 +28,12 @@ class MovieCell: UITableViewCell {
     }
     
     func configure(with model: MoviesPresentation?) {
-//        add kingfisher to upload images
+        
         guard let model = model else {return}
         movieName.text = model.title
         movieDesc.text = model.overview
         guard  let poster = model.posterPath else {return}
-        let url = URL(string: posterPath + poster)
+        let url = URL(string: NetworkUtils.posterPath + poster)
         movieImageView.kf.setImage(with: url)
     }
     
